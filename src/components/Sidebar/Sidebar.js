@@ -7,13 +7,16 @@ import PeopleIcon from '@material-ui/icons/People'
 import ChatIcon from '@material-ui/icons/Chat'
 import StorefrontIcon from '@material-ui/icons/Storefront'
 import VideoLibraryIcon from '@material-ui/icons/VideoLibrary'
+import {useStateValue} from '../../StateProvider';
 
 function Sidebar() {
+    const [{user}, dispatch] = useStateValue();
     return (
         <div className="sidebar">
             <SidebarRow
-            src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2018/02/propose-1517999844.jpg"
-            title="Rawah Alsinan"
+            //src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2018/02/propose-1517999844.jpg"
+            src={user.photoURL}
+            title={user.displayName}
             />
             <SidebarRow 
             Icon={LocalHospitalIcon}

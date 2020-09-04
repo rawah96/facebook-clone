@@ -1,0 +1,43 @@
+.login > img {
+    object-fit: contain;
+    height: 150px;
+}
+
+.login {
+    display: flex;
+}
+
+.facebook-login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.login-logo {
+    flex:0.5;
+    font-weight: lighter;
+}
+
+.login-logo > img {
+    margin-left: -15px;
+}
+
+.facebook-login:hover > button {
+    color:#2e81f4;
+    background-color:#eff2f5 ;
+}
+.btn {
+    flex:0.5 !important;
+    width: 1000px !important;
+    background-color: #2e81f4 !important;
+    color: #eff2f5 !important;
+    font-weight: 800 !important;
+}
+
+.btn:hover {
+    color:#2e81f4;
+    background-color:#eff2f5 ;
+}
